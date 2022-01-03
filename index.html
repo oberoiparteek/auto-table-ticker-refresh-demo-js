@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <table id="table1">
+      <tr>
+        <th>Name</th>
+        <th>Value</th>
+        <th>Time Updated</th>
+      </tr>
+    </table>
+
+    <template id="table-row-template">
+      <tr>
+        <td class="title">
+          ${item.title}
+        </td>
+        <td class="url">
+          ${item.url}
+        </td>
+        <td class="date">
+          ${Date().toLocaleUpperCase()}
+        </td>
+      </tr>
+    </template>
+    <script src="src/index.js"></script>
+  </body>
+</html>
