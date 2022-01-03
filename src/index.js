@@ -36,6 +36,6 @@ const fetchAndLoadData = () => {
 const interval = setInterval(() => {
   if (document.readyState === "complete") {
     fetchAndLoadData();
-    clearInterval(interval);
+    // clearInterval(interval);
   }
-}, 300);
+}, 5000);
